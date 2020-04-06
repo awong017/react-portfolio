@@ -51,7 +51,7 @@ const bio = () => {
 
                 <p className="intro">I found my passion for coding while working as an Industrial Engineering Technician 
                 after acquiring my Mechanical Engineering degree. The task that I enjoyed doing the most was basic C# programming in an 
-                ERP software and debugging what were known as product configurators. After talking to many of my developers friends, I learned that my task was similar 
+                ERP software and debugging what were known as product configurators. After talking to many of my friends who work as developers, I learned that my task was similar 
                 to those of a developer, but on a more elementary level. From then on I decided to make a career change and enter the Engineering 
                 Flex Web Development program at Thinkful. As a person that takes pleasure in seeing physical progress, web development brings 
                 me a tremendous amount joy when I look upon the finish product.</p>
