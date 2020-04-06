@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "alias": "awong017-portfolio",
+    "name": "portfolio",
+    "routes": [
+        { "handle": "filesystem" },
+        { "src": "/.*", "dest": "/index.html" }
+    ]
+  }

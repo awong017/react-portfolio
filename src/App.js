@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, withRouter } from 'react-router-dom';
+import Nav from './Components/nav';
+import Bio from './Components/bio';
+import Projects from './Components/projects';
+import Contact from './Components/contact';
+import Styled from 'styled-components';
 import './App.css';
 
-function App() {
+const App = Styled.div`
+`
+
+const renderRoutes = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Route path="/" component={Nav} /> 
+      <Route exact path="/" component={Bio} />
+      <Route path="/projects" component={Projects} />
+      <Route path="/contact" component={Contact} />
+    </>
+  )
 }
 
-export default App;
+const app = () => {
+  return (
+    <App>
+      {renderRoutes()}
+    </App>
+  )
+}
+
+export default withRouter(app);
