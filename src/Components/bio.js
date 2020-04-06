@@ -48,19 +48,26 @@ const bio = () => {
         <ThemeProvider theme={GlobalStyles}>
             <Bio>
                 <h2>Hi and welcome to my portfolio!</h2>
-
-                <p className="intro">I found my passion for coding while working as an Industrial Engineering Technician 
-                after acquiring my Mechanical Engineering degree. The task that I enjoyed doing the most was basic C# programming in an 
-                ERP software and debugging what were known as product configurators. After talking to many of my friends who work as developers, I learned that my task was similar 
-                to those of a developer, but on a more elementary level. From then on I decided to make a career change and enter the Engineering 
-                Flex Web Development program at Thinkful. As a person that takes pleasure in seeing physical progress, web development brings 
-                me a tremendous amount joy when I look upon the finish product.</p>
-
-                <p className="interests">When I'm not hacking away on my keyboard, one of my favorite hobbies are automotive modification
-                and maintenance. There's nothing like fine tuning the suspension of a car and going out for a spirited drive. 
-                I am also very passionate about sight seeing and world traveling. Being immersed in a variety of 
-                cultures is truly a unique and satisfying experience.</p>
-
+                <p className="intro">
+                    I was working as an Industrial Engineering Technician for a furniture manufacturer when I found my passion for coding. 
+                    The task that I enjoyed the most was basic C# programming in an ERP software and debugging what were known as product 
+                    configurators. After talking to many of my friends who work as web developers, they recommended that I look into that
+                    career path, as they thought it might be a good fit. 
+                </p>
+                <p className="body">
+                    From then on I decided to make a career change and enrolled in the Engineering Flex Web Development program at Thinkful. 
+                    Thinkful has provided me with the tools and concepts needed to be a successful software developer. With these tools, I 
+                    have not only completed front-end applications, but full stack ones as well that utilize a variety of technologies. While 
+                    completing these projects, I have grown very fond of full-stack web development due to the creativity involved and the ability 
+                    to add your own personal touch to an application on the front-end while building your own API on the back-end. Furthermore, they 
+                    have shown me the joy and satisfaction of seeing the creation of a website from a mere wireframe to a full-blown live web application. 
+                </p>
+                <p className="interests">
+                    When I'm not hacking away on my keyboard, one of my favorite hobbies are automotive modification
+                    and maintenance. There's nothing like fine tuning the suspension of a car and going out for a spirited drive. 
+                    I am also very passionate about sight seeing and world traveling. Being immersed in a variety of 
+                    cultures is truly a unique and satisfying experience.
+                </p>
                 <p className="front-end-skills">Front End Skills: React, JavaScript ES6, jQuery, HTML5, CSS3, SASS</p>
                 <p className="back-end-skills">Back End Skills: Express, PostgreSQL, RESTful APIs, TDD with Mocha</p>
                 <Footer />

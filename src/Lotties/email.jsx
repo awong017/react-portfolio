@@ -1,6 +1,6 @@
 // UncontrolledLottie.jsx
 import React from 'react';
-import Styled, { ThemeProvider } from 'styled-components';
+import Styled from 'styled-components';
 import Lottie from 'react-lottie';
 import animationData from './email.json';
 
