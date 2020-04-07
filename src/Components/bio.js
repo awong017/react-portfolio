@@ -7,7 +7,7 @@ const Bio = Styled.div`
     display: inline-block;
     text-align: center;
     color: ${(props) => props.theme.bodyColor};
-    margin-top: 300px;
+    margin-top: 275px;
     margin-left: ${(props) => props.theme.marginLeft};
     width: ${(props) => props.theme.width};
 
@@ -21,7 +21,7 @@ const Bio = Styled.div`
 
     @media screen and (max-width: ${(props) => props.theme.desktop}) {
         display: block;
-        margin-top: 150px;
+        margin-top: 125px;
         margin-left: 0px;
         padding-left: 50px;
         padding-right: 50px;
@@ -56,11 +56,10 @@ const bio = () => {
                 </p>
                 <p className="body">
                     From then on I decided to make a career change and enrolled in the Engineering Flex Web Development program at Thinkful. 
-                    Thinkful has provided me with the tools and concepts needed to be a successful software developer. With these tools, I 
-                    have not only completed front-end applications, but full stack ones as well that utilize a variety of technologies. While 
-                    completing these projects, I have grown very fond of full-stack web development due to the creativity involved and the ability 
-                    to add your own personal touch to an application on the front-end while building your own API on the back-end. Furthermore, they 
-                    have shown me the joy and satisfaction of seeing the creation of a website from a mere wireframe to a full-blown live web application. 
+                    Thinkful has provided me with the tools and concepts needed to be a successful full-stack web developer. I grew very fond 
+                    of full-stack web development due to the creativity involved and ability to add your own personal touch to an application 
+                    on the front-end, while building your own API on the back-end. Completing multiple projects has shown me the joy and 
+                    satisfaction of seeing the creation of a website from a mere wireframe to a full-blown live web application. 
                 </p>
                 <p className="interests">
                     When I'm not hacking away on my keyboard, one of my favorite hobbies are automotive modification

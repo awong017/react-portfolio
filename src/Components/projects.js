@@ -58,10 +58,6 @@ const Projects = Styled.div`
         padding-left: 50px;
         padding-right: 50px;
         width: initial;
-        
-        .latest-project {
-            margin-top: 100px;
-        }
     }
 
     @media screen and (max-width: ${(props) => props.theme.mobile}) {
