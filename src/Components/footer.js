@@ -7,7 +7,7 @@ import Linkedin from '../Lotties/linkedin.jsx';
 
 const Footer = Styled.div`
     text-align: center;
-    margin-top: 50px;
+    margin-top: 0px;
 
     ul {
         display: flex;

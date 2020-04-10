@@ -7,7 +7,7 @@ const Bio = Styled.div`
     display: inline-block;
     text-align: center;
     color: ${(props) => props.theme.bodyColor};
-    margin-top: 275px;
+    margin-top: 250px;
     margin-left: ${(props) => props.theme.marginLeft};
     width: ${(props) => props.theme.width};
 
@@ -15,13 +15,13 @@ const Bio = Styled.div`
         margin-top: 50px;
     }
 
-    .front-end-skills {
+    .skills-section {
         margin-top: 50px;
     }
 
     @media screen and (max-width: ${(props) => props.theme.desktop}) {
         display: block;
-        margin-top: 125px;
+        margin-top: 100px;
         margin-left: 0px;
         padding-left: 50px;
         padding-right: 50px;
@@ -67,8 +67,11 @@ const bio = () => {
                     I am also very passionate about sight seeing and world traveling. Being immersed in a variety of 
                     cultures is truly a unique and satisfying experience.
                 </p>
-                <p className="front-end-skills">Front End Skills: React, JavaScript ES6, jQuery, HTML5, CSS3, SASS</p>
-                <p className="back-end-skills">Back End Skills: Express, PostgreSQL, RESTful APIs, TDD with Mocha</p>
+                <section className="skills-section">
+                    <p className="skills">Front End Skills: React, JavaScript ES6, jQuery, HTML5, CSS3, SASS</p>
+                    <p className="skills">Back End Skills: Express, PostgreSQL, RESTful APIs, TDD with Mocha</p>
+                    <p className="skills">Additional Tools: Github, Heroku, Zeit</p>
+                </section>
                 <Footer />
             </Bio>
         </ThemeProvider>
