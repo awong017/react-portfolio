@@ -1,14 +1,30 @@
 import React from 'react';
-import Footer from './footer';
 import Styled, { ThemeProvider } from 'styled-components';
 import GlobalStyles from  '../Styles/globalStyles';
+import Html48 from '../Images/html-48.png';
+import Css48 from '../Images/css-48.png';
+import Sass48 from '../Images/sass-48.png';
+import Javascript48 from '../Images/javascript-48.png';
+import Jquery48 from '../Images/jquery-50.png';
+import React48 from '../Images/react-48.png';
+import Node48 from '../Images/node-48.png';
+import Npm48 from '../Images/npm-48.png';
+import Express48 from '../Images/express-48.png';
+import Postgres48 from '../Images/postgres-48.png';
+import Api48 from '../Images/api-48.png';
+import Mocha48 from '../Images/mocha-48.png';
+import Github48 from '../Images/github-48.png';
+import Heroku48 from '../Images/heroku-48.png';
+import Zeit48 from '../Images/zeit-48.png';
 
 const Bio = Styled.div`
     display: inline-block;
-    text-align: center;
+    background: #8db2ff;
+    border-radius: 50px;
     color: ${(props) => props.theme.bodyColor};
-    margin-top: 250px;
+    margin-top: 100px;
     margin-left: ${(props) => props.theme.marginLeft};
+    padding: 50px 50px;
     width: ${(props) => props.theme.width};
 
     .intro {
@@ -16,7 +32,31 @@ const Bio = Styled.div`
     }
 
     .skills-section {
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
         margin-top: 50px;
+
+        p {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .back-end-skills {
+            border-left: 2px solid white;
+            border-right: 2px solid white;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0px;
+            display: grid;
+            grid-template-columns: repeat(3, 33.33%);
+
+            li {
+                padding-top: 10px;
+                text-align: center;
+            }
+        }
     }
 
     @media screen and (max-width: ${(props) => props.theme.desktop}) {
@@ -68,11 +108,37 @@ const bio = () => {
                     cultures is truly a unique and satisfying experience.
                 </p>
                 <section className="skills-section">
-                    <p className="skills">Front End Skills: React, JavaScript ES6, jQuery, HTML5, CSS3, SASS</p>
-                    <p className="skills">Back End Skills: Express, PostgreSQL, RESTful APIs, TDD with Mocha</p>
-                    <p className="skills">Additional Tools: Github, Heroku, Zeit</p>
+                    <div>
+                        <p>Front End Skills</p>
+                        <ul>
+                            <li><img src={React48}/></li>
+                            <li><img src={Javascript48}/></li>
+                            <li><img src={Jquery48}/></li>
+                            <li><img src={Html48}/></li>
+                            <li><img src={Css48}/></li>
+                            <li><img src={Sass48}/></li>
+                        </ul>
+                    </div>
+                    <div className="back-end-skills">
+                        <p>Back End Skills</p>
+                        <ul>
+                            <li><img src={Express48}/></li>
+                            <li><img src={Postgres48}/></li>
+                            <li><img src={Api48}/></li>
+                            <li><img src={Mocha48}/></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Additional Tools</p>
+                        <ul>
+                            <li><img src={Npm48}/></li>
+                            <li><img src={Node48}/></li>
+                            <li><img src={Github48}/></li>
+                            <li><img src={Heroku48}/></li>
+                            <li><img src={Zeit48}/></li>
+                        </ul>
+                    </div>
                 </section>
-                <Footer />
             </Bio>
         </ThemeProvider>
     )

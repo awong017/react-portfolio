@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './footer';
 import { Link } from 'react-router-dom';
 import Styled, { ThemeProvider } from 'styled-components';
 import GlobalStyles from  '../Styles/globalStyles';
@@ -10,7 +11,7 @@ const Nav = Styled.div`
     padding-left: 50px;
     width: 20%;
 
-    ul {
+    .bio-ul {
         list-style: none;
         padding-top: 25px;
         padding-left: 0px;
@@ -39,7 +40,7 @@ const Nav = Styled.div`
         padding-left: 0px;
         width: initial;
 
-        ul {
+        .bio-ul {
             display: flex;
             justify-content: space-around;
             padding-top: 10px;
@@ -56,13 +57,13 @@ const Nav = Styled.div`
             font-size: 20px;
         }
 
-        li {
-            font-size: 12px;
-        }
-
-        ul {
+        .bio-ul {
             padding-top: 5px;
             padding-bottom: 5px;
+
+            li {
+                font-size: 12px;
+            }
         }
     }
 `
@@ -72,7 +73,7 @@ const nav = () => {
         <ThemeProvider theme={GlobalStyles}>
             <Nav>
                 <h1>Adam Wong</h1>
-                <ul>
+                <ul className="bio-ul">
                     <li>
                         <Link to={"/"}>
                             Bio
@@ -89,6 +90,7 @@ const nav = () => {
                         </Link>
                     </li>
                 </ul>
+                <Footer />
             </Nav>
         </ThemeProvider>
     )

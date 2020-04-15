@@ -11,10 +11,9 @@ const Footer = Styled.div`
 
     ul {
         display: flex;
-        justify-content: center;
         list-style: none;
         padding-left: 0px;
-        margin-left: 45px;
+        margin-left: 25px;
 
         .linkedin-icon {
             padding-top: 49px;
@@ -37,17 +36,17 @@ const footer = () => {
             <Footer>
                 <ul>
                     <li className="linkedin-icon">
-                        <a href="https://www.linkedin.com/in/adam-wong-785279122/">
+                        <a href="https://www.linkedin.com/in/adam-wong-785279122/" target="_blank">
                             <Linkedin />
                         </a>
                     </li>
                     <li className="github-icon">
-                        <a href="https://github.com/awong017?tab=stars">
+                        <a href="https://github.com/awong017?tab=stars" target="_blank">
                             <Github />
                         </a>
                     </li>
                     <li className="email-icon">
-                        <a href="mailto:adamwthedev@gmail.com">
+                        <a href="mailto:adamwthedev@gmail.com" target="_blank">
                             <Email />
                         </a>
                     </li>

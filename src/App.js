@@ -4,6 +4,10 @@ import Nav from './Components/nav';
 import Bio from './Components/bio';
 import Projects from './Components/projects';
 import Contact from './Components/contact';
+import ImportQuiz from './Components/importQuiz';
+import LiveLine from './Components/liveLine';
+import Xpense from './Components/xpense';
+import SmashUlt from './Components/smashUlt';
 import Styled from 'styled-components';
 import './App.css';
 
@@ -15,6 +19,10 @@ const renderRoutes = () => {
     <>
       <Route path="/" component={Nav} /> 
       <Route exact path="/" component={Bio} />
+      <Route path="/importQuiz" component={ImportQuiz} />
+      <Route path="/liveLine" component={LiveLine} />
+      <Route path="/xpense" component={Xpense} />
+      <Route path="/smashUlt" component={SmashUlt} />
       <Route path="/projects" component={Projects} />
       <Route path="/contact" component={Contact} />
     </>

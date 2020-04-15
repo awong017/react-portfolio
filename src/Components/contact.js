@@ -1,14 +1,15 @@
 import React from 'react';
-import Footer from './footer';
 import Styled, { ThemeProvider } from 'styled-components';
 import GlobalStyles from  '../Styles/globalStyles';
 
 const Contact = Styled.div`
     display: inline-block;
-    text-align: center;
+    background: #8db2ff;
+    border-radius: 50px;
     color: ${(props) => props.theme.bodyColor};
-    margin-top: 425px;
+    margin-top: 400px;
     margin-left: ${(props) => props.theme.marginLeft};
+    padding: 50px 50px;
     width: ${(props) => props.theme.width};
 
     a {
@@ -44,9 +45,8 @@ const contact = () => {
         <ThemeProvider theme={GlobalStyles}>
             <Contact>
                 <p>If you have any questions about my projects or wish to get in contact with me, you can contact me via email 
-                at <a href="mailto:adamwthedev@gmail.com">AdamWTheDev@gmail.com</a>. I would love to speak with you.
+                at <a href="mailto:adamwthedev@gmail.com" target="_blank">adamwthedev@gmail.com</a>. I would love to speak with you!
                 </p>
-                <Footer />
             </Contact>
         </ThemeProvider>
     ) 
