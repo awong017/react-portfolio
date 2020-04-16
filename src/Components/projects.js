@@ -13,7 +13,6 @@ const Projects = Styled.div`
     margin-top: 225px;
     margin-left: 35%;
     color: ${(props) => props.theme.bodyColor};
-    width: 1000px;
 
     .projects {
         display: grid;
@@ -21,8 +20,6 @@ const Projects = Styled.div`
 
         .wrapper {
             position: relative;
-            width: 500px;
-            height: 250px;
 
             &:hover .content {
                 opacity: 1;
@@ -40,7 +37,7 @@ const Projects = Styled.div`
             .content {
                 position: absolute;
                 color: white;
-                font-size: 28px;
+                font-size: 24px;
                 opacity 0;
                 transition: 0.5s ease;
             }
@@ -65,22 +62,43 @@ const Projects = Styled.div`
                 left: 30px;
             }
         }
+    }
 
-        .project-four {
-            background-image: url(${SmashUltCover});
+    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
+        display: block;
+        width: 800px;
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .wrapper {
+
+            img {
+                width: 400px;
+            }
+        } 
+    }
+
+    @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
+        width: initial;
+        margin-top: 100px;
+
+        .projects {
+            display: block;
+
+            .wrapper {
+                height: initial;
+                width: 310px;
+                margin-bottom: 25px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            img {
+                width: 310px;
+            }
         }
 
-        .project-three {
-            background-image: url(${XpenseCover});
-        }
-
-        .project-two {
-            background-image: url(${LiveLineCover});
-        }
-
-        .project-one {
-            background-image: url(${ImportQuizCover});
-        }
     }
 `
 

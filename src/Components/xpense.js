@@ -19,7 +19,7 @@ const Xpense = Styled.div`
     color: ${(props) => props.theme.bodyColor};
     margin-top: 150px;
     margin-left: ${(props) => props.theme.marginLeft};
-    padding: 50px 50px;
+    padding: 25px 50px;
     width: ${(props) => props.theme.width};
     border-radius: 50px;
 
@@ -39,6 +39,42 @@ const Xpense = Styled.div`
             text-decoration: underline;
         }
     }
+
+    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
+        display: block;
+        margin-top: 75px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
+        width: initial;
+        margin-top: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 25px 25px;
+
+        h1 {
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        .project-image {
+            width: 280px;
+            margin-left: 0px;
+        }
+
+        .icon {
+            width: 24px;
+        }
+    }
 `
 
 const xpense = () => {
@@ -52,19 +88,19 @@ const xpense = () => {
                     <span> | <a href="https://github.com/awong017/xpense-api" target="_blank">API</a></span>
                 </p>
                 <div>
-                    <img src={Xpense1} />
+                    <img className="project-image" src={Xpense1} />
                 </div>
                 <div>
-                    <img src={React48} alt="react icon" />       
-                    <img src={Javascript48} alt="javascript icon" />
-                    <img src={Html48} alt="html icon" />
-                    <img src={Express48} alt="express icon" />
-                    <img src={Postgres48} alt="postgres icon" />
-                    <img src={Npm48} alt="npm icon" />
-                    <img src={Node48} className="node-icon" alt="node icon" />
-                    <img src={Github48} alt="github icon" />
-                    <img src={Heroku48} alt="heroku icon" />
-                    <img src={Zeit48} alt="zeit icon" />     
+                    <img src={React48} className="icon" alt="react icon" />       
+                    <img src={Javascript48} className="icon" alt="javascript icon" />
+                    <img src={Html48} className="icon" alt="html icon" />
+                    <img src={Express48} className="icon" alt="express icon" />
+                    <img src={Postgres48} className="icon" alt="postgres icon" />
+                    <img src={Npm48} className="icon" alt="npm icon" />
+                    <img src={Node48} className="icon node-icon" alt="node icon" />
+                    <img src={Github48} className="icon" alt="github icon" />
+                    <img src={Heroku48} className="icon" alt="heroku icon" />
+                    <img src={Zeit48} className="icon" alt="zeit icon" />     
                 </div>
                 <section>
                     <h3>About</h3>

@@ -63,6 +63,7 @@ const Bio = Styled.div`
     @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
         display: block;
         width: initial;
+        margin-top: 75px;
         margin-left: 50px;
         margin-right: 50px;     
     }

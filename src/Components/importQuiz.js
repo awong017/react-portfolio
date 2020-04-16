@@ -14,7 +14,7 @@ const ImportQuiz = Styled.div`
     color: ${(props) => props.theme.bodyColor};
     margin-top: 150px;
     margin-left: ${(props) => props.theme.marginLeft};
-    padding: 50px 50px;
+    padding: 25px 50px;
     width: ${(props) => props.theme.width};
     border-radius: 50px;
 
@@ -30,6 +30,42 @@ const ImportQuiz = Styled.div`
             text-decoration: underline;
         }
     }
+
+    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
+        display: block;
+        margin-top: 75px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
+        width: initial;
+        margin-top: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 25px 25px;
+
+        h1 {
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        .project-image {
+            width: 280px;
+            margin-left: 0px;
+        }
+
+        .icon {
+            width: 24px;
+        }
+    }
 `
 
 const importQuiz = () => {
@@ -42,7 +78,7 @@ const importQuiz = () => {
                     <span> | <a className="git-link" href="https://awong017.github.io/import-quiz-app/" target="_blank">Live</a></span>
                 </p>
                 <div>
-                    <img src={ImportQuiz1} />
+                    <img className="project-image" src={ImportQuiz1} />
                 </div>
                 <div>
                     <img src={Html48} className="icon" alt="html icon" />
