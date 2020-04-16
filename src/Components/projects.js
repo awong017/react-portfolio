@@ -19,21 +19,11 @@ const NewProject = Styled.div`
         grid-template-columns: repeat(2, 50%);
 
         .project-four {
-            background: 
-                linear-gradient(
-                    rgba(0, 0, 0, 0.3),
-                    rgba(0, 0, 0, 0.3)
-                ),
-            url(${SmashUltCover});
+            background-image: url(${SmashUltCover});
         }
 
         .project-three {
-            background: 
-                linear-gradient(
-                    rgba(0, 0, 0, 0.3),
-                    rgba(0, 0, 0, 0.3)
-                ),
-            url(${XpenseCover});
+            background-image: url(${XpenseCover});
         }
 
         .project-two {
