@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Styled, { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../Styles/globalStyles';
-import ImportQuizCover from '../Images/import-quiz-cover-500px.png';
-import LiveLineCover from '../Images/live-line-cover-500px.png';
-import XpenseCover from '../Images/xpense-cover-500px.png';
-import SmashUltCover from '../Images/smash-ult-cover-500px.png';
+import ImportQuizCover from '../Images/import-quiz-cover-light.png';
+import LiveLineCover from '../Images/live-line-cover-light.png';
+import XpenseCover from '../Images/xpense-cover-light.png';
+import SmashUltCover from '../Images/smash-ult-cover-light.png';
 
 const NewProject = Styled.div`
     display: inline-block;
@@ -17,6 +17,35 @@ const NewProject = Styled.div`
     .projects {
         display: grid;
         grid-template-columns: repeat(2, 50%);
+
+        .wrapper {
+            position: relative;
+            width: 500px;
+            height: 250px;
+
+            &:hover .content {
+                opacity: 1;
+            }
+
+            img {
+                border-radius: 50px;
+
+                &:hover {
+                    opacity: 0.3;
+                    transition: 0.5s ease;
+                }
+            }
+
+            .content {
+                position: absolute;
+                bottom: 10px;
+                right: 30px;
+                color: white;
+                font-size: 28px;
+                opacity 0;
+                transition: 0.5s ease;
+            }
+        }
 
         .project-four {
             background-image: url(${SmashUltCover});
@@ -33,36 +62,6 @@ const NewProject = Styled.div`
         .project-one {
             background-image: url(${ImportQuizCover});
         }
-
-        div {
-            text-align: center;
-            background-size: cover;
-            margin: 5px 5px;
-            height: 250px;
-            border-radius: 25px;
-
-            &:hover {
-                cursor: pointer;
-                opacity: 0.3;
-                transition: 0.3s;
-                border: 4px solid white;
-                ;
-
-            }
-            
-
-            p {
-                font-weight: bold;
-                font-size: 30px;
-                position: absolute;
-                margin-top: 100px;
-                margin-left: 125px;
-
-                &:hover {
-                    opacity: 1.0;
-                }
-            }
-        }
     }
 `
 
@@ -72,16 +71,28 @@ const newProject = () => {
             <NewProject>
                 <div className="projects">
                     <Link to={"/smashUlt"}>
-                        <div className="project-four" />
+                        <div className="wrapper">
+                            <img src={SmashUltCover} />
+                            <div className="content">Smash Ultimate Stats Tracker</div>
+                        </div>
                     </Link>
                     <Link to={"/xpense"}>
-                        <div className="project-three" />
+                        <div className="wrapper">
+                            <img src={XpenseCover} />
+                            <div className="content">Xpense</div>
+                        </div>
                     </Link>
                     <Link to={"/liveLine"}>
-                        <div className="project-two" />
+                        <div className="wrapper">
+                            <img src={LiveLineCover} />
+                            <div className="content">Live Line</div>
+                        </div>
                     </Link>
                     <Link to={"/importQuiz"}>
-                        <div className="project-one" />
+                        <div className="wrapper">
+                            <img src={ImportQuizCover} />
+                            <div className="content">Import Quiz</div>
+                        </div>
                     </Link>
                 </div>
             </NewProject>
