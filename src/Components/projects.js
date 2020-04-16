@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Styled, { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../Styles/globalStyles';
-import ImportQuiz1 from '../Images/import-quiz1-500px.png';
-import LiveLine1 from '../Images/live-line1-500px.png';
-import Xpense1 from '../Images/xpense1-500px.png';
-import SmashUlt1 from '../Images/smash-ult1-500px.png';
+import ImportQuizCover from '../Images/import-quiz-cover-500px.png';
+import LiveLineCover from '../Images/live-line-cover-500px.png';
+import XpenseCover from '../Images/xpense-cover-500px.png';
+import SmashUltCover from '../Images/smash-ult-cover-500px.png';
 
 const NewProject = Styled.div`
     display: inline-block;
@@ -24,7 +24,7 @@ const NewProject = Styled.div`
                     rgba(0, 0, 0, 0.3),
                     rgba(0, 0, 0, 0.3)
                 ),
-            url(${SmashUlt1});
+            url(${SmashUltCover});
         }
 
         .project-three {
@@ -33,15 +33,15 @@ const NewProject = Styled.div`
                     rgba(0, 0, 0, 0.3),
                     rgba(0, 0, 0, 0.3)
                 ),
-            url(${Xpense1});
+            url(${XpenseCover});
         }
 
         .project-two {
-            background-image: url(${LiveLine1});
+            background-image: url(${LiveLineCover});
         }
 
         .project-one {
-            background-image: url(${ImportQuiz1});
+            background-image: url(${ImportQuizCover});
         }
 
         div {
