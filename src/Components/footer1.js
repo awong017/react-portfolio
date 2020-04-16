@@ -5,7 +5,7 @@ import Email from '../Lotties/email.jsx';
 import Github from '../Lotties/github.jsx';
 import Linkedin from '../Lotties/linkedin.jsx';
 
-const Footer = Styled.div`
+const Footer1 = Styled.div`
     text-align: center;
     margin-top: 0px;
 
@@ -25,15 +25,19 @@ const Footer = Styled.div`
         }
     }
 
-    @media screen and (max-width: ${(props) => props.theme.mobile}) {
+    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
+        display: none;
+    }
+
+    @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
         margin-top: 0px;
     }
 `
 
-const footer = () => {
+const footer1 = () => {
     return (
         <ThemeProvider theme={GlobalStyles}>
-            <Footer>
+            <Footer1>
                 <ul>
                     <li className="linkedin-icon">
                         <a href="https://www.linkedin.com/in/adam-wong-785279122/" target="_blank">
@@ -51,9 +55,9 @@ const footer = () => {
                         </a>
                     </li>
                 </ul>
-            </Footer>
+            </Footer1>
         </ThemeProvider>
     )
 }
 
-export default footer;
+export default footer1;

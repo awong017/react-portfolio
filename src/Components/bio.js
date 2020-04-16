@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer2 from './footer2';
 import Styled, { ThemeProvider } from 'styled-components';
 import GlobalStyles from  '../Styles/globalStyles';
 import Html48 from '../Images/html-48.png';
@@ -22,9 +23,9 @@ const Bio = Styled.div`
     background: #8db2ff;
     border-radius: 50px;
     color: ${(props) => props.theme.bodyColor};
-    margin-top: 100px;
+    margin-top: 125px;
     margin-left: ${(props) => props.theme.marginLeft};
-    padding: 50px 50px;
+    padding: 25px 50px;
     width: ${(props) => props.theme.width};
 
     .intro {
@@ -59,26 +60,44 @@ const Bio = Styled.div`
         }
     }
 
-    @media screen and (max-width: ${(props) => props.theme.desktop}) {
+    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
         display: block;
-        margin-top: 100px;
-        margin-left: 0px;
-        padding-left: 50px;
-        padding-right: 50px;
         width: initial;
+        margin-left: 50px;
+        margin-right: 50px;     
     }
 
-    @media screen and (max-width: ${(props) => props.theme.mobile}) {
+    @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
         margin-top: 50px;
-        padding-left: 25px;
-        padding-right: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 25px 25px;
         
         h2 {
             font-size: 16px;
         }
 
+        .intro {
+            margin-top: 25px;
+        }
+
         p {
             font-size: 12px;
+        }
+
+        .skills-section {
+            margin-top: 25px;
+
+            img {
+                width: 24px;
+            }
+        }
+    }
+
+    @media screen and (max-width: ${(props) => props.theme.mobileSmall}) {
+        .skills-heading {
+            margin-left: 5px;
+            margin-right: 5px;
         }
     }
 `
@@ -109,7 +128,7 @@ const bio = () => {
                 </p>
                 <section className="skills-section">
                     <div>
-                        <p>Front End Skills</p>
+                        <p className="skills-heading">Front End Skills</p>
                         <ul>
                             <li><img src={React48}/></li>
                             <li><img src={Javascript48}/></li>
@@ -120,7 +139,7 @@ const bio = () => {
                         </ul>
                     </div>
                     <div className="back-end-skills">
-                        <p>Back End Skills</p>
+                        <p className="skills-heading">Back End Skills</p>
                         <ul>
                             <li><img src={Express48}/></li>
                             <li><img src={Postgres48}/></li>
@@ -129,7 +148,7 @@ const bio = () => {
                         </ul>
                     </div>
                     <div>
-                        <p>Additional Tools</p>
+                        <p className="skills-heading">Additional Tools</p>
                         <ul>
                             <li><img src={Npm48}/></li>
                             <li><img src={Node48}/></li>
@@ -140,6 +159,7 @@ const bio = () => {
                     </div>
                 </section>
             </Bio>
+            <Footer2 />
         </ThemeProvider>
     )
 }

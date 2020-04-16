@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from './footer';
+import Footer1 from './footer1';
 import { Link } from 'react-router-dom';
 import Styled, { ThemeProvider } from 'styled-components';
 import GlobalStyles from  '../Styles/globalStyles';
@@ -32,7 +32,7 @@ const Nav = Styled.div`
         }
     }
 
-    @media screen and (max-width: ${(props) => props.theme.desktop}) {
+    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
         display: block;
         position: static;
         text-align: center;
@@ -52,7 +52,7 @@ const Nav = Styled.div`
             }
         }
     }
-    @media screen and (max-width: ${(props) => props.theme.mobile}) {
+    @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
         h1 {
             font-size: 20px;
         }
@@ -90,7 +90,7 @@ const nav = () => {
                         </Link>
                     </li>
                 </ul>
-                <Footer />
+                <Footer1 />
             </Nav>
         </ThemeProvider>
     )

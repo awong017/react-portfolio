@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer2 from './footer2';
 import Styled, { ThemeProvider } from 'styled-components';
 import GlobalStyles from  '../Styles/globalStyles';
 
@@ -9,7 +10,7 @@ const Contact = Styled.div`
     color: ${(props) => props.theme.bodyColor};
     margin-top: 400px;
     margin-left: ${(props) => props.theme.marginLeft};
-    padding: 50px 50px;
+    padding: 25px 50px;
     width: ${(props) => props.theme.width};
 
     a {
@@ -21,18 +22,20 @@ const Contact = Styled.div`
         }
     }
 
-    @media screen and (max-width: ${(props) => props.theme.desktop}) {
+    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
         display: block;
+        width: initial;
         margin-top: 150px;
-        margin-left: 0px;
-        padding-left: 50px;
-        padding-right: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
         width: initial;
     }
 
-    @media screen and (max-width: ${(props) => props.theme.mobile}) {
-        padding-left: 25px;
-        padding-right: 25px;
+    @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
+        margin-top: 125px;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 25px 25px;
 
         p {
             font-size: 12px;
@@ -48,6 +51,7 @@ const contact = () => {
                 at <a href="mailto:adamwthedev@gmail.com" target="_blank">adamwthedev@gmail.com</a>. I would love to speak with you!
                 </p>
             </Contact>
+            <Footer2 />
         </ThemeProvider>
     ) 
 }
