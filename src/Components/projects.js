@@ -87,11 +87,40 @@ const Projects = Styled.div`
             display: block;
 
             .wrapper {
+                position: initial;
                 height: initial;
                 width: 310px;
                 margin-bottom: 25px;
                 margin-left: auto;
                 margin-right: auto;
+
+                .content {
+                    display: block;
+                    position: initial;
+                    text-align: center;
+                    font-size: 18px;
+                    opacity: 1;
+                }
+
+                .content-one {
+                    bottom: initial;
+                    right: initial;
+                }
+    
+                .content-two {
+                    bottom: initial;
+                    left: initial;
+                }
+    
+                .content-three {
+                    top: initial;
+                    right: initial;
+                }
+    
+                .content-four {
+                    top: initial;
+                    left: initial;
+                }
             }
             
             img {
@@ -109,25 +138,25 @@ const projects = () => {
                 <div className="projects">
                     <Link to={"/smashUlt"}>
                         <div className="wrapper">
-                            <img src={SmashUltCover} />
+                            <img src={SmashUltCover} alt="smash ult cover" />
                             <div className="content content-four">Smash Ultimate Stats Tracker</div>
                         </div>
                     </Link>
                     <Link to={"/xpense"}>
                         <div className="wrapper">
-                            <img src={XpenseCover} />
+                            <img src={XpenseCover} alt="xpense cover" />
                             <div className="content content-three">Xpense</div>
                         </div>
                     </Link>
                     <Link to={"/liveLine"}>
                         <div className="wrapper">
-                            <img src={LiveLineCover} />
+                            <img src={LiveLineCover} alt="live line cover" />
                             <div className="content content-two">Live Line</div>
                         </div>
                     </Link>
                     <Link to={"/importQuiz"}>
                         <div className="wrapper">
-                            <img src={ImportQuizCover} />
+                            <img src={ImportQuizCover} alt="import quiz cover" />
                             <div className="content content-one">Import Quiz</div>
                         </div>
                     </Link>

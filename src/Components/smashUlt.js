@@ -75,7 +75,7 @@ const smashUlt = () => {
                 <h1>Smash Bros Ultimate Stats Tracker</h1>
                 <p>Work in Progress</p>
                 <div>
-                    <img className="project-image" src={SmashUlt1} />
+                    <img className="project-image" src={SmashUlt1} alt="project image" />
                 </div>
                 <div>
                     <img src={React48} className="icon" alt="react icon" />       

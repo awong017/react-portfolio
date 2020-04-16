@@ -74,11 +74,11 @@ const liveLine = () => {
             <LiveLine>
             <h1>Live Line</h1>
                 <p>
-                    <a className="git-link" href="https://github.com/awong017/Live-Line" target="_blank">Repo</a>
-                    <span> | <a className="git-link" href="https://awong017.github.io/Live-Line/" target="_blank">Live</a></span>
+                    <a className="git-link" href="https://github.com/awong017/Live-Line" target="_blank" rel="noopener noreferrer">Repo</a>
+                    <span> | <a className="git-link" href="https://awong017.github.io/Live-Line/" target="_blank" rel="noopener noreferrer">Live</a></span>
                 </p>
                 <div>
-                    <img className="project-image" src={LiveLine1} />
+                    <img className="project-image" src={LiveLine1} alt="project image" />
                 </div>
                 <div>
                     <img src={Html48} className="icon" alt="html icon" />

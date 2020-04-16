@@ -83,12 +83,12 @@ const xpense = () => {
             <Xpense>
                 <h1>Xpense</h1>
                 <p>
-                    <a href="https://github.com/awong017/xpense" target="_blank">Repo</a>
-                    <span> | <a href="https://xpense-app.awong017.now.sh" target="_blank">Live</a></span>
-                    <span> | <a href="https://github.com/awong017/xpense-api" target="_blank">API</a></span>
+                    <a href="https://github.com/awong017/xpense" target="_blank" rel="noopener noreferrer">Repo</a>
+                    <span> | <a href="https://xpense-app.awong017.now.sh" target="_blank" rel="noopener noreferrer">Live</a></span>
+                    <span> | <a href="https://github.com/awong017/xpense-api" target="_blank" rel="noopener noreferrer">API</a></span>
                 </p>
                 <div>
-                    <img className="project-image" src={Xpense1} />
+                    <img className="project-image" src={Xpense1} alt="project image" />
                 </div>
                 <div>
                     <img src={React48} className="icon" alt="react icon" />       

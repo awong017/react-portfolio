@@ -74,11 +74,11 @@ const importQuiz = () => {
             <ImportQuiz>
                 <h1>Import Car Quiz</h1>
                 <p>
-                    <a className="git-link" href="https://github.com/awong017/import-quiz-app" target="_blank">Repo</a>
-                    <span> | <a className="git-link" href="https://awong017.github.io/import-quiz-app/" target="_blank">Live</a></span>
+                    <a className="git-link" href="https://github.com/awong017/import-quiz-app" target="_blank" rel="noopener noreferrer">Repo</a>
+                    <span> | <a className="git-link" href="https://awong017.github.io/import-quiz-app/" target="_blank" rel="noopener noreferrer">Live</a></span>
                 </p>
                 <div>
-                    <img className="project-image" src={ImportQuiz1} />
+                    <img className="project-image" src={ImportQuiz1} alt="project image" />
                 </div>
                 <div>
                     <img src={Html48} className="icon" alt="html icon" />

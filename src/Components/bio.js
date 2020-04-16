@@ -131,31 +131,31 @@ const bio = () => {
                     <div>
                         <p className="skills-heading">Front End Skills</p>
                         <ul>
-                            <li><img src={React48}/></li>
-                            <li><img src={Javascript48}/></li>
-                            <li><img src={Jquery48}/></li>
-                            <li><img src={Html48}/></li>
-                            <li><img src={Css48}/></li>
-                            <li><img src={Sass48}/></li>
+                            <li><img src={React48} alt="react icon" /></li>
+                            <li><img src={Javascript48} alt="javscript icon" /></li>
+                            <li><img src={Jquery48} alt="jquery icon" /></li>
+                            <li><img src={Html48} alt="html icon" /></li>
+                            <li><img src={Css48} alt="css icon" /></li>
+                            <li><img src={Sass48} alt="sass icon" /></li>
                         </ul>
                     </div>
                     <div className="back-end-skills">
                         <p className="skills-heading">Back End Skills</p>
                         <ul>
-                            <li><img src={Express48}/></li>
-                            <li><img src={Postgres48}/></li>
-                            <li><img src={Api48}/></li>
-                            <li><img src={Mocha48}/></li>
+                            <li><img src={Express48} alt="express icon" /></li>
+                            <li><img src={Postgres48} alt="postgres icon" /></li>
+                            <li><img src={Api48} alt="api icon" /></li>
+                            <li><img src={Mocha48} alt="mocha icon" /></li>
                         </ul>
                     </div>
                     <div>
                         <p className="skills-heading">Additional Tools</p>
                         <ul>
-                            <li><img src={Npm48}/></li>
-                            <li><img src={Node48}/></li>
-                            <li><img src={Github48}/></li>
-                            <li><img src={Heroku48}/></li>
-                            <li><img src={Zeit48}/></li>
+                            <li><img src={Npm48} alt="npm icon" /></li>
+                            <li><img src={Node48} alt="node icon" /></li>
+                            <li><img src={Github48} alt="github icon" /></li>
+                            <li><img src={Heroku48} alt="heroku icon" /></li>
+                            <li><img src={Zeit48} alt="zeit icon" /></li>
                         </ul>
                     </div>
                 </section>

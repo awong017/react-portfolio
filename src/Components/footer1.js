@@ -40,17 +40,17 @@ const footer1 = () => {
             <Footer1>
                 <ul>
                     <li className="linkedin-icon">
-                        <a href="https://www.linkedin.com/in/adam-wong-785279122/" target="_blank">
+                        <a href="https://www.linkedin.com/in/adam-wong-785279122/" target="_blank" rel="noopener noreferrer">
                             <Linkedin />
                         </a>
                     </li>
                     <li className="github-icon">
-                        <a href="https://github.com/awong017?tab=stars" target="_blank">
+                        <a href="https://github.com/awong017?tab=stars" target="_blank" rel="noopener noreferrer">
                             <Github />
                         </a>
                     </li>
                     <li className="email-icon">
-                        <a href="mailto:adamwthedev@gmail.com" target="_blank">
+                        <a href="mailto:adamwthedev@gmail.com" target="_blank" rel="noopener noreferrer">
                             <Email />
                         </a>
                     </li>

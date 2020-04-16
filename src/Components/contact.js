@@ -15,6 +15,7 @@ const Contact = Styled.div`
 
     a {
         text-decoration: none;
+        font-weight: bold;
         color: white;
 
         &:hover {
@@ -48,7 +49,7 @@ const contact = () => {
         <ThemeProvider theme={GlobalStyles}>
             <Contact>
                 <p>If you have any questions about my projects or wish to get in contact with me, you can contact me via email 
-                at <a href="mailto:adamwthedev@gmail.com" target="_blank">adamwthedev@gmail.com</a>. I would love to speak with you!
+                at <a href="mailto:adamwthedev@gmail.com" target="_blank" rel="noopener noreferrer">adamwthedev@gmail.com</a>. I would love to speak with you!
                 </p>
             </Contact>
             <Footer2 />
