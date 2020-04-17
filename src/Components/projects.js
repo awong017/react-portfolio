@@ -18,6 +18,10 @@ const Projects = Styled.div`
         display: grid;
         grid-template-columns: repeat(2, 50%);
 
+        a {
+            text-decoration: none;
+        }
+
         .wrapper {
             position: relative;
 
@@ -125,6 +129,10 @@ const Projects = Styled.div`
             
             img {
                 width: 310px;
+
+                &:hover {
+                    opacity: 1;
+                }
             }
         }
 
