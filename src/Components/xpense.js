@@ -3,6 +3,7 @@ import Styled, { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../Styles/globalStyles';
 import Xpense1 from '../Images/xpense1-500px.png';
 import Html48 from '../Images/html-48.png';
+import Css48 from '../Images/css-48.png';
 import Javascript48 from '../Images/javascript-48.png';
 import React48 from '../Images/react-48.png';
 import Node48 from '../Images/node-48.png';
@@ -94,6 +95,7 @@ const xpense = () => {
                     <img src={React48} className="icon" alt="react icon" />       
                     <img src={Javascript48} className="icon" alt="javascript icon" />
                     <img src={Html48} className="icon" alt="html icon" />
+                    <img src={Css48} className="icon" alt="css icon" />
                     <img src={Express48} className="icon" alt="express icon" />
                     <img src={Postgres48} className="icon" alt="postgres icon" />
                     <img src={Npm48} className="icon" alt="npm icon" />
