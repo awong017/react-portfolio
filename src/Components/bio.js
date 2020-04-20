@@ -20,22 +20,22 @@ import Zeit48 from '../Images/zeit-48.png';
 
 const Bio = Styled.div`
     display: inline-block;
-    background: #8db2ff;
+    background: ${(props) => props.theme.backgroundColor1};
     border-radius: 50px;
     color: ${(props) => props.theme.bodyColor};
-    margin-top: 125px;
+    margin-top: 124px;
     margin-left: ${(props) => props.theme.marginLeft};
-    padding: 25px 50px;
+    padding: 24px 48px;
     width: ${(props) => props.theme.width};
 
     .intro {
-        margin-top: 50px;
+        margin-top: 48px;
     }
 
     .skills-section {
         display: grid;
         grid-template-columns: repeat(3, 33.33%);
-        margin-top: 50px;
+        margin-top: 48px;
 
         p {
             text-align: center;
@@ -54,32 +54,38 @@ const Bio = Styled.div`
             grid-template-columns: repeat(3, 33.33%);
 
             li {
-                padding-top: 10px;
+                padding-top: 12px;
                 text-align: center;
             }
         }
     }
 
-    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
+    @media screen and (max-width: ${(props) => props.theme.desktopWindow}) {
         display: block;
+        margin-top: 76px;
+        margin-left: auto;
+        margin-right: auto;     
+    }
+
+    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
         width: initial;
-        margin-top: 75px;
-        margin-left: 50px;
-        margin-right: 50px;     
+        margin-top: 76px;
+        margin-left: 48px;
+        margin-right: 48px;     
     }
 
     @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
-        margin-top: 50px;
-        margin-left: 25px;
-        margin-right: 25px;
-        padding: 25px 25px;
+        margin-top: 48px;
+        margin-left: 24px;
+        margin-right: 24px;
+        padding: 24px 24px;
         
         h2 {
             font-size: 16px;
         }
 
         .intro {
-            margin-top: 25px;
+            margin-top: 24px;
         }
 
         p {
@@ -87,7 +93,7 @@ const Bio = Styled.div`
         }
 
         .skills-section {
-            margin-top: 25px;
+            margin-top: 24px;
 
             img {
                 width: 24px;
@@ -97,8 +103,8 @@ const Bio = Styled.div`
 
     @media screen and (max-width: ${(props) => props.theme.mobileSmall}) {
         .skills-heading {
-            margin-left: 5px;
-            margin-right: 5px;
+            margin-left: 4px;
+            margin-right: 4px;
         }
     }
 `

@@ -32,7 +32,7 @@ const Nav = Styled.div`
         }
     }
 
-    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
+    @media screen and (max-width: ${(props) => props.theme.desktopWindow}) {
         display: block;
         position: static;
         text-align: center;

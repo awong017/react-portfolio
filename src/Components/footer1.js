@@ -25,7 +25,7 @@ const Footer1 = Styled.div`
         }
     }
 
-    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
+    @media screen and (max-width: ${(props) => props.theme.desktopWindow}) {
         display: none;
     }
 

@@ -18,9 +18,9 @@ const Xpense = Styled.div`
     display: ${(props) => props.theme.display};
     background-color: ${(props) => props.theme.backgroundColor1};
     color: ${(props) => props.theme.bodyColor};
-    margin-top: 150px;
+    margin-top: 148px;
     margin-left: ${(props) => props.theme.marginLeft};
-    padding: 25px 50px;
+    padding: 24px 48px;
     width: ${(props) => props.theme.width};
     border-radius: 50px;
 
@@ -29,7 +29,7 @@ const Xpense = Styled.div`
     }
 
     .node-icon {
-        margin-left: 5px;
+        margin-left: 4px;
     }
 
     a { 
@@ -43,17 +43,17 @@ const Xpense = Styled.div`
 
     @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
         display: block;
-        margin-top: 75px;
+        margin-top: 76px;
         margin-left: auto;
         margin-right: auto;
     }
 
     @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
         width: initial;
-        margin-top: 50px;
-        margin-left: 25px;
-        margin-right: 25px;
-        padding: 25px 25px;
+        margin-top: 48px;
+        margin-left: 24px;
+        margin-right: 24px;
+        padding: 24px 24px;
 
         h1 {
             font-size: 18px;

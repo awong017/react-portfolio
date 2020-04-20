@@ -10,7 +10,7 @@ const Contact = Styled.div`
     color: ${(props) => props.theme.bodyColor};
     margin-top: 400px;
     margin-left: ${(props) => props.theme.marginLeft};
-    padding: 25px 50px;
+    padding: 24px 48px;
     width: ${(props) => props.theme.width};
 
     a {
@@ -23,20 +23,25 @@ const Contact = Styled.div`
         }
     }
 
-    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
+    @media screen and (max-width: ${(props) => props.theme.desktopWindow}) {
         display: block;
+        margin-top: 148px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
         width: initial;
-        margin-top: 150px;
-        margin-left: 50px;
-        margin-right: 50px;
-        width: initial;
+        margin-top: 148px;
+        margin-left: 48px;
+        margin-right: 48px;
     }
 
     @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
-        margin-top: 125px;
-        margin-left: 25px;
-        margin-right: 25px;
-        padding: 25px 25px;
+        margin-top: 124px;
+        margin-left: 24px;
+        margin-right: 24px;
+        padding: 24px 24px;
 
         p {
             font-size: 12px;

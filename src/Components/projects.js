@@ -30,12 +30,27 @@ const Projects = Styled.div`
             }
 
             img {
-                border-radius: 50px;
 
                 &:hover {
                     opacity: 0.3;
                     transition: 0.5s ease;
                 }
+            }
+
+            .smash-ult {
+                border-top-left-radius: 50px;
+            }
+
+            .xpense {
+                border-top-right-radius: 50px;
+            }
+
+            .live-line {
+                border-bottom-left-radius: 50px;
+            }
+
+            .import {
+                border-bottom-right-radius: 50px;
             }
 
             .content {
@@ -68,7 +83,7 @@ const Projects = Styled.div`
         }
     }
 
-    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
+    @media screen and (max-width: ${(props) => props.theme.desktopWindow}) {
         display: block;
         width: 800px;
         margin-top: 150px;
@@ -76,6 +91,7 @@ const Projects = Styled.div`
         margin-right: auto;
 
         .wrapper {
+            height: 200px;
 
             img {
                 width: 400px;
@@ -146,25 +162,25 @@ const projects = () => {
                 <div className="projects">
                     <Link to={"/smashUlt"}>
                         <div className="wrapper">
-                            <img src={SmashUltCover} alt="smash ult cover" />
+                            <img src={SmashUltCover} className="smash-ult" alt="smash ult cover" />
                             <div className="content content-four">Smash Ultimate Stats Tracker</div>
                         </div>
                     </Link>
                     <Link to={"/xpense"}>
                         <div className="wrapper">
-                            <img src={XpenseCover} alt="xpense cover" />
+                            <img src={XpenseCover} className="xpense" alt="xpense cover" />
                             <div className="content content-three">Xpense</div>
                         </div>
                     </Link>
                     <Link to={"/liveLine"}>
                         <div className="wrapper">
-                            <img src={LiveLineCover} alt="live line cover" />
+                            <img src={LiveLineCover} className="live-line" alt="live line cover" />
                             <div className="content content-two">Live Line</div>
                         </div>
                     </Link>
                     <Link to={"/importQuiz"}>
                         <div className="wrapper">
-                            <img src={ImportQuizCover} alt="import quiz cover" />
+                            <img src={ImportQuizCover} className="import" alt="import quiz cover" />
                             <div className="content content-one">Import Quiz</div>
                         </div>
                     </Link>
