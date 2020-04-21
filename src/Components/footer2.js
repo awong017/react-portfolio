@@ -54,19 +54,25 @@ const footer2 = () => {
             <Footer2>
                 <ul>
                     <li className="linkedin-icon">
-                        <a href="https://www.linkedin.com/in/adam-wong-785279122/" target="_blank" rel="noopener noreferrer">
-                            <Linkedin />
-                        </a>
+                        <div className="icon">
+                            <a href="https://www.linkedin.com/in/adam-wong-785279122/" target="_blank" rel="noopener noreferrer">
+                                <Linkedin />
+                            </a>
+                        </div>
                     </li>
                     <li className="github-icon">
-                        <a href="https://github.com/awong017?tab=stars" target="_blank" rel="noopener noreferrer">
-                            <Github />
-                        </a>
+                        <div className="icon">
+                            <a href="https://github.com/awong017?tab=stars" target="_blank" rel="noopener noreferrer">
+                                <Github />
+                            </a>
+                        </div>
                     </li>
                     <li className="email-icon">
-                        <a href="mailto:adamwthedev@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <Email />
-                        </a>
+                        <div className="icon">
+                            <a href="mailto:adamwthedev@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <Email />
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </Footer2>

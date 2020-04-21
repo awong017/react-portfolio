@@ -28,10 +28,6 @@ const Footer1 = Styled.div`
     @media screen and (max-width: ${(props) => props.theme.desktopWindow}) {
         display: none;
     }
-
-    @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
-        margin-top: 0px;
-    }
 `
 
 const footer1 = () => {
