@@ -17,8 +17,10 @@ const globalStyles = {
     // Media Queries
     desktopWindow: "1400px",
     desktopHalf: "960px",
+    tablet: "770px",
     mobileMedium: "500px",
     mobileSmall: "375px",
+    mobileMini: "330px",
 }
 
 export default globalStyles;

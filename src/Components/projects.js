@@ -145,6 +145,7 @@ const Projects = Styled.div`
             
             img {
                 width: 310px;
+                border-radius: 50px;
 
                 &:hover {
                     opacity: 1;

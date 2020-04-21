@@ -32,17 +32,29 @@ const Footer2 = Styled.div`
         margin-left: auto;
         margin-right: auto;
         padding-top: 0px;
+        padding-left: 21%;
+    }
+
+    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
         padding-left: 15%;
+    }
+
+    @media screen and (max-width: ${(props) => props.theme.tablet}) {
+        padding-left: 7%;     
     }
 
     @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
         margin-top: 0px;
         width: initial;
-        padding-left: 35px;     
+        padding-left: 38px;     
     }
 
     @media screen and (max-width: ${(props) => props.theme.mobileSmall}) {
         padding-left: 20px;     
+    }
+
+    @media screen and (max-width: ${(props) => props.theme.mobileMini}) {
+        padding-left: 0px;     
     }
 
 
