@@ -39,8 +39,8 @@ const SmashUlt = Styled.div`
     }
 
     @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
-        width: init48ial;
-        margin-top: px;
+        width: initial;
+        margin-top: 48px;
         margin-left: 24px;
         margin-right: 24px;
         padding: 24px 24px;
