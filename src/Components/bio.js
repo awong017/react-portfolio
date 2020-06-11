@@ -17,6 +17,9 @@ import Mocha48 from '../Images/mocha-48.png';
 import Github48 from '../Images/github-48.png';
 import Heroku48 from '../Images/heroku-48.png';
 import Zeit48 from '../Images/zeit-48.png';
+import Gatsby48 from '../Images/gatsby-48.png';
+import Graphql48 from '../Images/graphql-48.png';
+import Strapi48 from '../Images/strapi-48.png';
 
 const Bio = Styled.div`
     display: inline-block;
@@ -138,6 +141,7 @@ const bio = () => {
                         <p className="skills-heading">Front End Skills</p>
                         <ul>
                             <li><img src={React48} alt="react icon" /></li>
+                            <li><img src={Gatsby48} alt="gatsby icon" /></li>
                             <li><img src={Javascript48} alt="javscript icon" /></li>
                             <li><img src={Jquery48} alt="jquery icon" /></li>
                             <li><img src={Html48} alt="html icon" /></li>
@@ -150,6 +154,7 @@ const bio = () => {
                         <ul>
                             <li><img src={Express48} alt="express icon" /></li>
                             <li><img src={Postgres48} alt="postgres icon" /></li>
+                            <li><img src={Graphql48} alt="graphql icon" /></li>
                             <li><img src={Api48} alt="api icon" /></li>
                             <li><img src={Mocha48} alt="mocha icon" /></li>
                         </ul>
@@ -159,6 +164,7 @@ const bio = () => {
                         <ul>
                             <li><img src={Npm48} alt="npm icon" /></li>
                             <li><img src={Node48} alt="node icon" /></li>
+                            <li><img src={Strapi48} alt="strapi icon" /></li>
                             <li><img src={Github48} alt="github icon" /></li>
                             <li><img src={Heroku48} alt="heroku icon" /></li>
                             <li><img src={Zeit48} alt="zeit icon" /></li>
