@@ -112,7 +112,7 @@ const xpense = () => {
                         for the server, and postgreSQL to manage a relational database, this was a true full-stack project. Xpense allows the user to 
                         manage his or her daily expenses. With an expense summary view with many filters, users are able stay within their specified budget
                         and are able to keep track of their purchases with ease. Sign into the guest account and see for yourself! Details can be found 
-                        in the repo documentation.
+                        in the repo documentation
                     </p>
                 </section>
             </Xpense>
