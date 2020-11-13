@@ -118,7 +118,7 @@ const bio = () => {
             <Bio>
                 <h2>Hi and welcome to my portfolio!</h2>
                 <p className="intro">
-                    I was working as an Industrial Engineering Technician for a furniture manufacturer when I found my passion for coding. 
+                    I was working as an Industrial Engineer for a furniture manufacturer when I found my passion for coding. 
                     The task that I enjoyed the most was basic C# programming in an ERP software and debugging what were known as product 
                     configurators. After talking to many of my friends who work as web developers, they recommended that I look into that
                     career path, as they thought it might be a good fit. 
