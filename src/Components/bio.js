@@ -20,6 +20,8 @@ import Zeit48 from '../Images/zeit-48.png';
 import Gatsby48 from '../Images/gatsby-48.png';
 import Graphql48 from '../Images/graphql-48.png';
 import Strapi48 from '../Images/strapi-48.png';
+import Typescript48 from '../Images/typescript-48.png';
+import Redux48 from '../Images/redux-48.png';
 
 const Bio = Styled.div`
     display: inline-block;
@@ -141,8 +143,10 @@ const bio = () => {
                         <p className="skills-heading">Front End Skills</p>
                         <ul>
                             <li><img src={React48} alt="react icon" /></li>
+                            <li><img src={Redux48} alt="redux icon" /></li>
                             <li><img src={Gatsby48} alt="gatsby icon" /></li>
-                            <li><img src={Javascript48} alt="javscript icon" /></li>
+                            <li><img src={Javascript48} alt="javascript icon" /></li>
+                            <li><img src={Typescript48} alt="typescript icon" /></li>
                             <li><img src={Jquery48} alt="jquery icon" /></li>
                             <li><img src={Html48} alt="html icon" /></li>
                             <li><img src={Css48} alt="css icon" /></li>

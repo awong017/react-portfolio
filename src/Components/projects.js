@@ -99,7 +99,7 @@ const Projects = Styled.div`
         } 
     }
 
-    @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
+    @media screen and (max-width: 800px) {
         width: initial;
         margin-top: 100px;
 

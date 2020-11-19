@@ -7,18 +7,16 @@ import Linkedin from '../Lotties/linkedin.jsx';
 
 const Footer2 = Styled.div`
     display: none;
-    text-align: center;
-    margin-top: 0px;
 
     ul {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
         list-style: none;
         padding-left: 0px;
-        margin-left: 25px;
 
         .linkedin-icon {
             padding-top: 49px;
-            margin-right: 40px;
+            
         }
 
         .github-icon {
@@ -31,33 +29,11 @@ const Footer2 = Styled.div`
         width: 50%;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 0px;
-        padding-left: 21%;
-    }
-
-    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
-        padding-left: 15%;
-    }
-
-    @media screen and (max-width: ${(props) => props.theme.tablet}) {
-        padding-left: 7%;     
     }
 
     @media screen and (max-width: ${(props) => props.theme.mobileMedium}) {
-        margin-top: 0px;
-        width: initial;
-        padding-left: 38px;     
+        width: 90%;
     }
-
-    @media screen and (max-width: ${(props) => props.theme.mobileSmall}) {
-        padding-left: 20px;     
-    }
-
-    @media screen and (max-width: ${(props) => props.theme.mobileMini}) {
-        padding-left: 0px;     
-    }
-
-
 `
 
 const footer2 = () => {
