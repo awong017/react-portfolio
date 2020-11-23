@@ -109,7 +109,8 @@ const smashUlt = () => {
                         Ultimate? This full-stack application will do just that! Users of this app will be able to keep
                         track of their records for every character matchup. They will also be able to see their matchup progress
                         overtime as well as see how they stack up against other users. Main purpose of build was to incorporate React
-                        hooks along with styled components.
+                        hooks along with styled components. Sign into the guest account and see for yourself! Login and details can be found 
+                        in the repo documentation.
                     </p>
                 </section>
             </SmashUlt>
