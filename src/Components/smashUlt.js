@@ -31,6 +31,15 @@ const SmashUlt = Styled.div`
         margin-left: 4px;
     }
 
+    a { 
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
         display: block;
         margin-top: 76px;
@@ -73,7 +82,11 @@ const smashUlt = () => {
         <ThemeProvider theme={GlobalStyles}>
             <SmashUlt>
                 <h1>Smash Bros Ultimate Stats Tracker</h1>
-                <p>Work in Progress</p>
+                <p>
+                    <a href="https://github.com/awong017/smash-ult-stats-tracker" target="_blank" rel="noopener noreferrer">Repo</a>
+                    <span> | <a href="https://smash-ult-stats-tracker-aruj0k060.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a></span>
+                    <span> | <a href="https://github.com/awong017/smash-ult-stats-tracker-api" target="_blank" rel="noopener noreferrer">API</a></span>
+                </p>
                 <div>
                     <img className="project-image" src={SmashUlt1} alt="project image" />
                 </div>
@@ -96,8 +109,7 @@ const smashUlt = () => {
                         Ultimate? This full-stack application will do just that! Users of this app will be able to keep
                         track of their records for every character matchup. They will also be able to see their matchup progress
                         overtime as well as see how they stack up against other users. Main purpose of build was to incorporate React
-                        hooks along with styled components. Although currently under construction, this app will be deployed very
-                        soon with Heroku and Zeit! 
+                        hooks along with styled components.
                     </p>
                 </section>
             </SmashUlt>
