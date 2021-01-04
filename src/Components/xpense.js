@@ -41,7 +41,7 @@ const Xpense = Styled.div`
         }
     }
 
-    @media screen and (max-width: ${(props) => props.theme.desktopHalf}) {
+    @media screen and (max-width: ${(props) => props.theme.desktopWindow}) {
         display: block;
         margin-top: 76px;
         margin-left: auto;
