@@ -121,12 +121,11 @@ const bio = () => {
                 <h2>Hi and welcome to my portfolio!</h2>
                 <p className="intro">
                     I was working as an Industrial Engineer for a furniture manufacturer when I found my passion for coding. 
-                    The task that I enjoyed the most was basic C# programming in an ERP software and debugging what were known as product 
-                    configurators. After talking to many of my friends who work as web developers, they recommended that I look into that
-                    career path, as they thought it might be a good fit. 
+                    The task that I enjoyed the most was programming and debugging in our ERP software. My passion for software development 
+                    was so strong that I was offered a transfer to the ITSM department. I gladly accepted and never looked back.
                 </p>
                 <p className="body">
-                    From then on I decided to make a career change and enrolled in the Engineering Flex Web Development program at Thinkful. 
+                    From then on I decided to enroll in the Engineering Flex Web Development program at Thinkful. 
                     Thinkful has provided me with the tools and concepts needed to be a successful full-stack web developer. I grew very fond 
                     of full-stack web development due to the creativity involved and ability to add your own personal touch to an application 
                     on the front-end, while building your own API on the back-end. Completing multiple projects has shown me the joy and 
